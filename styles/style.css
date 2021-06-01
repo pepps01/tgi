@@ -56,6 +56,13 @@ Navigation
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  flex-flow: nowrap;
+  gap: 20px !important;
+}
+.nav-support {
+  display: flex !important;
+  flex-basis: auto;
+  flex-direction: column;
 }
 .my-auto > a {
   background: #cdb04e;
