@@ -1,0 +1,827 @@
+/*****************************************************
+General style for Document
+******************************************************/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*****************************************************
+Navigation
+******************************************************/
+.container-nav {
+  background-color: #000;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: #000;
+  padding: 0.5rem 0rem;
+}
+
+.message-container > a > img,
+.social-container > a > img {
+  width: 20px;
+  height: 20px;
+}
+.message-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 25px;
+}
+
+.social-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.nav-container {
+  padding: 1.5rem 0rem;
+}
+
+.nav-container > .container {
+  padding: 0;
+}
+
+.me-auto {
+  margin-right: 0px !important;
+}
+
+.nav-direction {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.my-auto > a {
+  background: #cdb04e;
+  color: #fff;
+  padding: 1rem;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.black-button {
+  background-color: black;
+  color: #cdb04e;
+  padding: 1rem;
+  font-weight: bolder;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.gold-button {
+  background-color: #cdb04e;
+  color: #000;
+  padding: 1rem;
+  font-weight: bolder;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.gold-button:hover {
+  background-color: black;
+  color: #cdb04e;
+}
+
+/*****************************************************
+Main Home
+******************************************************/
+
+/* Home Page */
+.carousel-container {
+  position: relative;
+  padding: 0px;
+  overflow: hidden;
+  height: 83vh;
+}
+
+.carousel-container:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.carousel-caption {
+  margin-top: 5rem;
+}
+
+.carousel-caption {
+  z-index: 3 !important;
+  position: absolute;
+  text-align: left;
+  top: 30%;
+}
+.carousel-caption > h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.carousel-caption > h6 {
+  font-size: 1.1rem;
+}
+
+.carousel-caption > .my-auto {
+  margin-top: 5rem;
+}
+/* Product */
+.product-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.input-control::placeholder {
+  color: lightgray;
+  font-size: 0.8rem;
+}
+
+.margin-bottom {
+}
+
+.label-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.label-container > div {
+  font-weight: bolder;
+}
+
+input[type="checkbox"] {
+  border: 2px solid black !important;
+}
+.p-reduce {
+  font-size: 0.8rem;
+}
+.bg-light {
+  background-color: #fff !important;
+}
+.p-tiny {
+  font-size: 0.65rem;
+}
+.button-update {
+  border: 2px solid #cdb04e;
+  color: #000;
+  background-color: #fff !important;
+}
+
+.button-reactivate {
+  color: white;
+  height: 3.5rem;
+  background-color: #cdb04e !important;
+  border: none;
+}
+.button-reactivation {
+  color: black;
+  height: 2.5rem;
+  background-color: #cdb04e !important;
+  border: none;
+}
+.button-reactivation:hover {
+  border: #cdb04e;
+}
+
+.button-activate {
+  color: white;
+  height: 3rem;
+  background: #000 !important;
+  padding-top: 0.7rem;
+  border: none !important;
+  color: #cdb04e;
+}
+.button-activate:hover {
+  background-color: #cdb04e !important;
+  color: #fff;
+}
+
+.input-control::selection {
+  color: gray;
+  font-size: 0.8rem;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: gray;
+  font-size: 0.8rem;
+}
+.input-control {
+  border: 2px solid black !important;
+}
+
+.loan-selection {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.loan-selection > div {
+  border: 1px solid #cdb04e;
+  width: 100%;
+  color: black;
+  font-weight: bolder;
+}
+.loan-selection > div:first-child {
+  margin-right: 5rem;
+}
+.loan-selection > div:hover {
+  background-color: #cdb04e;
+  border: #cdb04e;
+}
+
+.button-container {
+  display: flex;
+}
+
+.button-container > a {
+  padding-top: 0.7rem;
+}
+
+.button-container > a:first-child {
+  width: 10rem;
+  height: 3rem;
+  background: #cdb04e;
+  border: 1px solid;
+}
+
+.button-container > a:first-child:hover {
+  background-color: #fff;
+  color: #cdb04e;
+}
+/* .button-container > a:first-child:visited {
+  background-color: black;
+  color: #fff;
+} */
+
+.button-container > a:last-child {
+  width: 10rem;
+  height: 3rem;
+  border: 1px solid #cdb04e;
+  color: #cdb04e;
+  margin-left: 1rem;
+}
+
+.button-container > a:last-child:hover {
+  color: #fff;
+  background-color: #cdb04e;
+}
+.button-container > a:last-child:visited {
+  background-color: #000;
+  color: #cdb04e;
+}
+
+.decision-container {
+  background-color: #cdb04e;
+  padding: 3rem;
+}
+.decision-container > h1 {
+  font-weight: bolder;
+  text-align: center;
+  font-size: 3rem;
+}
+.decision-container > .quick {
+  color: #fff;
+  font-weight: bolder;
+}
+.form-container > h4 {
+}
+
+.loan-selection {
+  display: flex;
+  justify-content: center;
+}
+.laon-selection > button {
+  border: 2px solid #cdb04e;
+  text-align: center;
+}
+.payday,
+.installment {
+  border: 2px solid #cdb04e;
+}
+
+.quick {
+  color: #fff;
+}
+
+.form-container {
+  font-size: 0.75rem;
+}
+.form-container p:first-child {
+  margin-bottom: 0rem;
+}
+
+.form-container p:last-child {
+  margin-top: 0px;
+}
+
+.tgilogo {
+  width: 30%;
+}
+
+.commitment-container {
+  width: 100%;
+  padding-top: 15px;
+}
+
+.uncommon {
+  white-space: nowrap !important;
+}
+
+.uncommon:hover {
+  color: #cdb04e !important;
+}
+
+.uncommon:visited {
+  text-decoration: underline !important;
+  color: #cdb04e !important;
+}
+
+.activate {
+  color: #cdb04e;
+}
+/*****************************************************
+About US Section
+******************************************************/
+#about-text {
+  background: linear-gradient(rgb(81, 68, 28, 0.55), rgb(81, 68, 28, 0.55)),
+    url(../Images/about.jpg) center/cover;
+  color: #ffffff;
+  margin-bottom: 0;
+  min-height: 40%; /* Fallback for browsers do NOT support vh unit */
+  min-height: 40vh; /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center;
+}
+
+#mission {
+  background-color: #ceb04e;
+  color: #ffffff;
+  padding: 3rem 0;
+}
+
+#mission-text {
+  display: flex;
+  align-items: center;
+}
+
+#mission-image {
+  padding-left: 0;
+}
+
+#mission-image > img {
+  width: 100%;
+}
+
+.btn-link {
+  text-decoration: none !important;
+  color: black;
+  font-weight: bolder;
+}
+.btn-link {
+  width: 100%;
+  text-align: left;
+  word-wrap: nowrap;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 0.85rem;
+}
+.btn-link > img {
+  float: right;
+  padding-top: 7px;
+  width: 1.5%;
+}
+
+.btn-link:focus {
+  background: #fff;
+  border: none;
+  outline: 0;
+}
+.btn-link:hover {
+  color: #cdb04e;
+}
+
+.font-reduce {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  kerning: 1.5rem;
+}
+
+#accordion > .card {
+  border: none;
+}
+#accordion > .card > .card-header {
+  background: #fff;
+  border: none;
+  border-bottom: 1px solid #ceb04e;
+}
+#accordion > .card > .card-header {
+}
+
+footer {
+}
+#footer {
+  padding: 0px;
+  margin: 0px;
+}
+
+#top-footer {
+  padding: 2rem;
+  background: black;
+}
+
+#footer-socials > a > img {
+  width: 20px;
+  margin-right: 2%;
+}
+#footer-nav {
+  display: flex;
+  justify-content: center;
+}
+
+#footer-nav > ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  gap: 5%;
+}
+
+#footer-nav > ul > li > a {
+  text-decoration: none;
+  color: #cdb04e;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+#bottom-footer {
+  background-color: white;
+  color: #808080;
+  font-size: 0.6rem;
+}
+
+#bottom-footer > p {
+}
+.product-container > .card {
+  border: none !important;
+}
+/*****************************************************
+Form Container
+******************************************************/
+.formcontainer {
+  font-size: 0.7rem;
+}
+
+.formcontainer > form {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 2.5rem;
+  margin-left: 8rem;
+}
+
+.welcome-container > ul {
+  list-style: none;
+}
+
+#sign-up ul li::before {
+  content: "\25AA"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #ceb04e; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+#sign-up-form input::placeholder {
+  color: #ababab;
+  padding-left: 10px;
+}
+
+#sign-up {
+  font-size: 0.7rem;
+}
+#square-background {
+  background: url("/Images/squares-bg-2.png") repeat;
+}
+.grey-bg {
+  background-color: #fafafa;
+  font-size: 0.8rem;
+}
+.grey-bg img {
+  width: 100%;
+}
+
+#ready-to-apply {
+  background-color: #333;
+  color: #ceb04e;
+}
+#ready-to-apply a {
+  white-space: nowrap;
+  text-decoration: none;
+  background-color: #cdb04e;
+  border: 1px solid #cdb04e;
+  color: #fff;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+#get-cash {
+  background-color: #ceb04e;
+  color: #ffffff;
+}
+
+#get-cash img {
+  width: 100%;
+}
+#get-cash a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.85rem;
+}
+
+#flexible-options {
+  background: url("/Images/squares-bg-2.png") repeat;
+}
+
+#flexible-options img {
+  width: 100%;
+}
+#flexible-options .gold-border {
+  background-color: #fff;
+  border: 3px solid #cdb04e;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+}
+#flexible-options .gold-border p {
+  font-size: 0.8rem;
+}
+
+#loan-requirements {
+  background: linear-gradient(rgb(81, 68, 28, 0.55), rgb(81, 68, 28, 0.55)),
+    url("../Images/qualify.jpg") center/cover !important;
+}
+
+#loan-requirements h2 {
+  color: #fff;
+}
+
+#q-table img {
+  width: 100%;
+}
+#loan-requirements a {
+  text-decoration: none;
+  background-color: #000;
+  color: #cdb04e;
+  padding: 1rem;
+  border-radius: 2px;
+}
+
+.bold-italics {
+  background-color: #cdb04e;
+  color: #fff;
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  padding: 1.5rem;
+}
+
+#qualify {
+  background: linear-gradient(rgb(81, 68, 28, 0.55), rgb(81, 68, 28, 0.55)),
+    url("../Images/qualify.jpg") cover;
+}
+
+#loan-select {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("../Images/funds-3.jpg") center/cover;
+  height: 83vh;
+  position: relative;
+}
+#loan-select .carousel-caption {
+  left: 50;
+  text-align: center;
+}
+
+.modal-header {
+  background-color: #cdb04e;
+  color: #fff;
+}
+
+.lead {
+  font-size: 0.85rem;
+}
+
+.gradient-container {
+  margin-top: 7rem !important ;
+}
+
+#square-background {
+  margin-top: auto;
+  font-size: 0.8rem;
+}
+
+.grey-bg {
+  width: 50%;
+  padding: 2rem;
+}
+.grey-bg img {
+  width: 100%;
+  padding: 0px;
+}
+
+.checkbar {
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+.lead {
+  font-size: 1.3rem;
+}
+
+.bank-card {
+  background-color: #c9b05e;
+  border-radius: 5px;
+  color: #fff;
+}
+.bank-card > a {
+  color: #ffffff;
+}
+.bank-card-light {
+  background-color: #ddc77a;
+  border: none;
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 0.7rem 0.5rem;
+}
+.bank-card-light::after {
+  background-color: #c9b05e;
+}
+.bank-card-light::placeholder {
+  color: #fff;
+  font-size: 0.85rem;
+}
+.account-header > a {
+  display: block;
+}
+.account-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.document-container li {
+  list-style-type: none;
+  margin-top: 0.5rem;
+  margin-left: 0rem;
+}
+
+.document-container li a {
+  color: #000;
+  font-size: 0.85rem;
+}
+
+.forgot-ImageContainer,
+.email-container {
+  text-align: center;
+}
+
+.forgot-ImageContainer {
+}
+
+.email-container {
+  max-width: 400px;
+  margin: auto;
+}
+.email-container input {
+  padding: 1rem;
+  text-align: center;
+  border: 0.8px solid #c9b05e;
+  font-size: 0.85rem;
+}
+
+.email-container input::placeholder {
+  color: #c9b05e;
+}
+.email-container > p {
+  font-size: 0.8rem;
+}
+
+/* .form-control:read-only {
+  background-color: #c9b05e;
+} */
+
+.button-submit {
+  width: 65%;
+  border-radius: 0px;
+  margin: auto;
+  background-color: #c9b05e;
+  font-size: 0.9rem;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+table {
+  font-size: 0.85rem;
+}
+
+.general-amount {
+  border-bottom: 0.5px solid #c9b05e;
+}
+
+.count-amount tbody tr:nth-child(odd) {
+  background-color: #f7f1da;
+}
+
+.username {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0.5rem;
+}
+.username div {
+  font-weight: 800;
+}
+
+.magnate {
+  color: #7bc1e4;
+  font-weight: 600;
+}
+
+.check-balance {
+  display: flex;
+  justify-content: space-between;
+}
+.rtl {
+  direction: rtl;
+  color: #cdb04e;
+}
+
+.dotted-card {
+  border: 1px dashed #c9b05e;
+  width: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.8rem;
+  background-color: rgb(240, 240, 240);
+}
+
+#fileInput {
+  display: none;
+}
+
+#myButton {
+  color: #fff;
+  background-color: #c9b05e;
+  border-radius: 20px;
+  border: none;
+  margin: auto;
+  padding: 10px;
+  font-size: 0.9rem;
+  width: 100%;
+  max-width: 150px;
+}
+
+.button-default {
+  background: #c9b05e;
+  border-radius: 40px;
+  color: #fff;
+  display: block;
+  margin: auto;
+}
+
+#imageID {
+  margin: auto;
+}
+
+.table-loan a {
+  text-decoration: none;
+  color: black;
+}
+
+.common {
+  white-space: nowrap !important;
+}
+
+.common:hover {
+  color: #cdb04e !important;
+}
+
+.common-first {
+  color: black;
+}
+
+.common:visited {
+  text-decoration: underline !important;
+  color: #cdb04e !important;
+}
+.common-logout {
+  white-space: nowrap !important;
+  color: #cdb04e !important;
+}
