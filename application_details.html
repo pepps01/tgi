@@ -105,7 +105,7 @@ Main Home Page
       </div>
     </nav>
     <main class="container">
-        <h3>Loan Details</h3>
+        <h3>Application Details</h3>
 
         <div class="row loan-select">
             <div class="col-6">
@@ -117,149 +117,101 @@ Main Home Page
             </div>            
         </div>
 
-        <p class="mt-4"><i>Loan - #1303</i></p>
-        <div class=" row general-amount  mx-1 my-4">
-            <div class="col-6 col-sm-6">
-                <h2>$1,500.00</h2>
-            </div>
-            <div class="col-6 col-sm-6">
-                <h2>2%</h2>
-            </div>
-        </div>
-        <div class="loan-information mb-3 ">
-            
+        <p class="mt-4"><i>Application - #1303</i></p>
+     
+        <div class="loan-information  border-color mb-3">
+                       <h4>Application Summary</h4>
             <table class="table table-borderless">
-                <thead>
-                    <tr>
-                        <th scope="col">Loan Information</th>
-                        <th scope="col">Payment Information</th>
-                    </tr>
-                </thead>
+          
                 <tbody>
                     <tr>
-                        <td>Status:  Repayment</td>
-                        <td>Scheduled Payment Amount: $265</td>
+                        <td><strong>Status:</strong>  Approved</td>
                     </tr>
                     <tr>
-                        <td>Approved Loan Amount:  $1,500</td>
-                        <td>Current Amount due Date: 12/05/2021</td>
+                        <td><strong>Approved Loan Amount:</strong>  $200</td>
                     </tr>
                     <tr>
-                        <td>Maximunm Prepayment Term: 6 months</td>
-                        <td>Last Payment Recieved: $0</td>
+                        <td><strong>Started On: </strong> 04/04/2021</td>
                     </tr>
                     <tr>
-                        <td>First Disbursement Date: 12/04/2021</td>
-                        <td>Last Payment Date: 12/05/2021</td>
+                        <td><strong>Loan Type:</strong>  Business</td>
                     </tr>
                     <tr>
-                        <td>Estimated Pay-off Date: </td>
-                        <td>Past Due: $0</td>
+                        <td><strong>Interest rate:</strong> 4.66%</td>
                     </tr>
                       <tr>
-                        <td>Calculate Payoff Amount </td>
-                        <td>Number of Days Past Due: 0</td>
+                        <td><strong>Rate type:</strong> Fixed </td>
+                    </tr>
+                        <tr>
+                        <td><strong>Repayment Option:</strong>  Fixed Repayment </td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
-        <div class="loan-history">
+        <div class="loan-history mt-5">
 
-            <h4>Loan History</h4>
-
-            <div class="row" >
-                <div class="col-md-6">
-                    <i>Balances as of 04/22/2021  05:33:00AM ET</i>
-                </div>
-
-                <div class="col-md-2"></div>
-
-                <div class="col-md-4 pl-4" >
-                    <p class="rtl">Request Consolidated loan report</p>
-                </div>
-            </div>
-
-            <div class="row mb-3 mt-4">
-                
-               <div class="col-md-3 ">
-                    <select id="inputState" class="form-select">
-                          <option selected>All Loans</option>
-                        <option>Business Loan</option>
-                        <option>Personal Loan</option>
-                    </select>
-               </div>
-               <div class="col-md-6"></div>
-               <div class="col-md-3">
-                    <select id="inputState" class="form-select">
-                        <option selected>2021</option>
-                        <option>2022</option>
-                        <option>2023</option>
-                    </select>
-               </div>
-            </div>
-
+            <h4>Application Schedule</h4>
+            <p>All repayments are withdrawn from your account on the specified date</p>
+       
             <div class="row-priviledge">
                 <table class="table table-striped table-hover count-amount">
                     <thead>
                         <tr>
-                            <th scope="col">Date</th>
-                            <th scope="col">Activity</th>
-                            <th scope="col">Loan</th>
-                            <th scope="col">Amount</th>
-                            <th scope="col">Fees</th>
-                            <th scope="col">Interest</th>
+                            <th scope="col">Repayment</th>
+                            <th scope="col">Repayment Amount</th>
                             <th scope="col">Principal</th>
+                            <th scope="col">Interest</th>
+                            <th scope="col">Balance</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td scope="row">05/21/2021</td>
-                            <td></td>
-                            <td class="magnate">#1303</td>
-                            <td>$267.68</td>
-                            <td></td>
-                            <td>$0.00</td>
-                            <td>$0.00</td>
+                            <td scope="row">1</td>
+                            <td>$17.44</td>
+                            <td>$15.70</td>
+                            <td>1.75</td>
+                            <td>$184.30</td>
                         </tr>
                         <tr>
-                            <td scope="row">05/21/2021</td>
-                            <td></td>
-                            <td class="magnate">#1303</td>
-                            <td>$267.68</td>
-                            <td></td>
-                            <td>$0.00</td>
-                            <td>$0.00</td>
+                            <td scope="row">2</td>
+                            <td>$17.44</td>
+                            <td>$15.70</td>
+                            <td>1.75</td>
+                            <td>$167.15</td>
                         </tr>
                         <tr>
-                            <td scope="row">05/21/2021</td>
-                            <td></td>
-                            <td class="magnate">#1303</td>
-                            <td>$267.68</td>
-                            <td></td>
-                            <td>$0.00</td>
-                            <td>$0.00</td>
+                             <td scope="row">3</td>
+                            <td>$17.44</td>
+                            <td>$15.70</td>
+                            <td>1.75</td>
+                            <td>$150.00</td>
                         </tr>
                          <tr>
-                            <td scope="row">05/21/2021</td>
-                            <td></td>
-                            <td class="magnate"> #1303</td>
-                            <td>$267.68</td>
-                            <td></td>
-                            <td>$0.00</td>
-                            <td>$0.00</td>
+                             <td scope="row">4</td>
+                            <td>$17.44</td>
+                            <td>$15.70</td>
+                            <td>1.75</td>
+                            <td>$132.85</td>
                         </tr>
                          <tr>
-                            <td scope="row">05/21/2021</td>
-                            <td></td>
-                            <td class="magnate">#1303</td>
-                            <td>$267.68</td>
-                            <td></td>
-                            <td>$0.00</td>
-                            <td>$0.00</td>
+                             <td scope="row">5</td>
+                            <td>$17.44</td>
+                            <td>$15.70</td>
+                            <td>1.75</td>
+                            <td>$150.00</td>
                         </tr>
                     </tbody>
                 </table>
+                </div>
+
+                <div class="button-container">
+                    <button class="">Get Funds</button>
+                    <button class="">Cancel</button>
+                </div>
+                
+                <div class="extranote">
+                        <p>By Clicking *<span>Get Funds</span> tou agree to TGI Brooks Capital <a href="">Payments Terms</a>, <a href="">ACH Authorization</a> and <a href="">Lenders Limit Policy</a></p>
                 </div>
             </div>
 
