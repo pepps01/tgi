@@ -38,6 +38,7 @@ Navigation
   display: flex;
   justify-content: flex-end;
   gap: 10px;
+  width: 100%;
 }
 
 .nav-container {
@@ -54,10 +55,10 @@ Navigation
 
 .nav-direction {
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
   justify-content: flex-end;
   flex-flow: nowrap;
-  gap: 20px !important;
+  gap: 10px !important;
 }
 .nav-support {
   display: flex !important;
@@ -144,7 +145,7 @@ Main Home
 }
 
 .input-control::placeholder {
-  color: lightgray;
+  color: grey;
   font-size: 0.8rem;
 }
 
@@ -506,7 +507,7 @@ Form Container
 }
 
 #sign-up-form input::placeholder {
-  color: #ababab;
+  color: grey;
   padding-left: 10px;
 }
 
@@ -778,6 +779,25 @@ table {
   font-size: 0.8rem;
   background-color: rgb(240, 240, 240);
 }
+.review-card {
+  width: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.8rem;
+  background-color: rgb(240, 240, 240);
+  margin-top: 1rem;
+}
+.review-card button {
+  font-size: 0.8rem;
+  text-decoration: #c9b05e;
+  display: inline;
+  color: #c9b05e;
+  float: left;
+  font-weight: bolder;
+  padding: 0rem;
+}
 
 #fileInput {
   display: none;
@@ -831,4 +851,97 @@ table {
 .common-logout {
   white-space: nowrap !important;
   color: #cdb04e !important;
+}
+
+.sorry {
+  margin: auto;
+  display: block;
+  text-align: center;
+  padding: 0px 33% 0px 33%;
+}
+.sorry > img {
+  margin-bottom: 2rem;
+  width: 50%;
+}
+.sorry > h4 {
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.sorry a {
+  color: #cdb04e;
+}
+
+.bank-account {
+  margin-top: 3rem;
+}
+.bank-account h4 {
+  font-weight: bolder;
+  margin-bottom: 3rem;
+}
+.bank-account p {
+  margin-bottom: 1rem;
+}
+
+.bank-account button {
+  border: none;
+  outline: none;
+  background: #c9b05e;
+  color: white;
+  font-size: 0.9rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+.bank-account button:hover {
+  background-color: white;
+  color: #c9b05e;
+  border: 1px solid #c9b05e;
+}
+.table-border-gold {
+  border-top: 2px solid #c9b05e;
+  border-bottom: 2px solid #c9b05e;
+  margin-top: 2rem;
+}
+.table-border-gold a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #c9b05e;
+}
+.table-border-gold th,
+.table-border-gold td {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Appkication detail Page */
+.loan-select-border {
+  border-bottom: 2px solid #c9b05e;
+  padding-bottom: 0.3rem;
+  margin-bottom: 2rem;
+}
+
+.button-container {
+  margin: 2rem 0rem;
+}
+.button-container button {
+  border: none;
+  outline: none;
+  padding: 0.5rem 3rem;
+  color: #fff;
+  margin-right: 3rem;
+}
+.button-container .get {
+  background-color: #c9b05e;
+}
+.button-container .cancel {
+  background-color: #000;
+}
+
+.extranote i {
+  color: #c9b05e;
+}
+
+.extranote a {
+  color: #000;
+  font-style: italic;
 }
