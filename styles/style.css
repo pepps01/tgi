@@ -945,3 +945,10 @@ table {
   color: #000;
   font-style: italic;
 }
+
+.chart-figure {
+  font-weight: bolder;
+  position: absolute;
+  top: 42%;
+  left: 18%;
+}
