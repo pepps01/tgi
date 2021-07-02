@@ -834,6 +834,7 @@ table {
 
 .common {
   white-space: nowrap !important;
+  font-weight: 600;
 }
 
 .common:hover {
@@ -842,6 +843,7 @@ table {
 
 .common-first {
   color: black;
+  font-weight: 600;
 }
 
 .common:visited {
@@ -851,13 +853,14 @@ table {
 .common-logout {
   white-space: nowrap !important;
   color: #cdb04e !important;
+  font-weight: 600;
 }
 
 .sorry {
   margin: auto;
   display: block;
   text-align: center;
-  padding: 0px 33% 0px 33%;
+  padding: 15% 25% 3% 25%;
 }
 .sorry > img {
   margin-bottom: 2rem;
@@ -871,6 +874,9 @@ table {
   color: #cdb04e;
 }
 
+.sorry p {
+  margin-bottom: 0.2rem;
+}
 .bank-account {
   margin-top: 3rem;
 }
@@ -951,4 +957,5 @@ table {
   position: absolute;
   top: 42%;
   left: 18%;
+  font-family: "Montserrat", sans-serif;
 }
