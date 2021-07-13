@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/style.css" />
-    <title>TGI Group</title>
+    <title>TGI Group | Loan Review</title>
   </head>
   <body>
    <!-- /*****************************************************
@@ -225,13 +225,11 @@ Main Home Page
 
                 <div class="col-md-1"></div>
                 <div class="col-md-3">
-
                     <h5>My Documents</h5>
-
                     <ul class="document-container">
-                        <li><a href="">Driving License</a></li>
-                        <li><a href="">Tax Returns</a></li>
-                        <li><a href="">Pay Stubs</a></li>
+                        <li id="driverLicense">Driving License</li>
+                        <li id="tax-returns">Tax Returns</li>
+                        <li id="paySub">Pay Stubs</li>
                     </ul>
 
                     <div class="card dotted-card">
@@ -247,6 +245,7 @@ Main Home Page
 
                         <div id="file-list-display"></div>
                     </div>
+
 
                     <div class="loan-review review-card">
                         <h6 style="font-weight: bolder;">Review</h6>
@@ -269,7 +268,59 @@ Main Home Page
 
      
     </main>
+
     <!-- Footer -->
+
+
+
+
+        <!-- MODAL -->
+    <div class="modal" tabindex="-1" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              id="CancelChangesOne"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Select Folder to Add File</p>
+
+            <form>
+              <select
+                class="form-select form-select-md"
+                aria-label=".form-select-md example"
+                id="select-file"
+              >
+                <option selected>Select Folder</option>
+                <option value="1">Drivers License</option>
+                <option value="2">Tax Returns</option>
+                <option value="3">Pay Stubs</option>
+              </select>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+              id="CancelChangesTwo"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-success" id="saveChanges">
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -288,107 +339,9 @@ Main Home Page
     ></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-
-    <script>
-      let fileInput = document.getElementById("fileInput");
-      let myButton = document.getElementById("myButton");
-      let fileCatcher =  document.getElementById("file-catcher");
-      var fileListDisplay = document.getElementById('file-list-display');
-
-      let fileList = [];
-      let renderFileList, sendFile;
+  <script src="/js/FileUpload.js"></script>
+  <script src="/js/Chart.js"></script>
 
 
-      myButton.addEventListener("click", function(e){
-          fileInput.click()
-      }, false);
-
-
-      fileInput.addEventListener("change", function(e){
-
-        fileList = [];
-        for(let i=0; i < fileInput.files.length; i++) {
-            console.log(fileInput.files[i]);
-            fileList.push(fileInput.files[i])
-          }
-          renderFileList();
-      });
-
-
-      fileCatcher.addEventListener("submit", function(e){
-        e.preventDefault();
-
-        fileList.forEach(function (file) {
-            sendFile(file);
-        });
-      })
-    
-
-      renderFileList = function (){
-        fileListDisplay.innerHTML = "";
-        fileList.forEach(function (file, index){
-            var fileDisplayEl = document.createElement('p');
-           
-            fileDisplayEL.innerHTML = (index + 1) + ': '+ file.name;
-            fileListDisplay.appendChild(fileDisplayEL);
-        }); 
-      };
-
-
-
-      sendFile =  function (file) {
-        let formData = new FormData();
-        let request = XMLHttpRequest();
-
-        formData.set('file', file);
-        request.open('POST', URL_API);
-        request.send(formData);
-        console.log("File Uploaded")
-      }
-
-
-
-      // Chart JS
-     
-      // Chart JS
-      var ctx = document.getElementById('myChart').getContext('2d');
-
-      var myChart = new Chart(ctx, {
-          type: 'doughnut',
-          data: {
-              datasets: [{
-                  data: [23, 7],
-                  label: "75%",
-                  backgroundColor: [
-                    'rgba(201, 176, 94, 0.2)',
-                      'rgba(255, 255, 255, 1)',
-                     
-                  ],
-                  borderColor: [
-                    'rgba(201, 176, 94, 1)',
-                      'rgba(255, 255, 255, 1)',
-                  ],
-                  borderWidth: 1,
-              }]
-          },
-          options: {
-              scales: {
-                 
-              },
-              cutout: 40,
-              elements: {
-              center: {
-                text: 'Red is 2/3 of the total numbers',
-                color: '#FF6384', // Default is #000000
-                fontStyle: 'Arial', // Default is Arial
-                sidePadding: 20, // Default is 20 (as a percentage)
-                minFontSize: 25, // Default is 20 (in px), set to false and text will not wrap.
-                lineHeight: 25 // Default is 25 (in px), used for when text wraps
-              }
-            }
-          },
-          
-      });
- </script>
-  </body>
+</body>
 </html>
