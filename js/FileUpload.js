@@ -8,6 +8,7 @@ let selectFileOption = document.getElementById("select-file");
 let driverLicense = document.getElementById("driverLicense");
 let taxReturns = document.getElementById("tax-returns");
 let paySub = document.getElementById("paySub");
+let others = document.getElementById("others");
 
 //   Modal Options
 
@@ -66,6 +67,9 @@ function addFileNametoFolder(e) {
     case "3":
       console.log(this.options[this.selectedIndex].text);
       addFile(paySub);
+    case "4":
+      console.log(this.options[this.selectedIndex].text);
+      addFile(others);
 
       break;
     default:
@@ -82,6 +86,6 @@ function addFile(documentParent) {
       p.style.color = "blue";
       documentParent.appendChild(p);
     }
-    fileStorage.splice(0,fileStorage.length)
+    fileStorage.splice(0, fileStorage.length);
   }
 }
